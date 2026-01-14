@@ -1,0 +1,10 @@
+:root,
+ion-app {
+  --ion-font-family: 'Geist', sans-serif;
+  --ion-text-color: var(--foreground);
+  --app-bg-color: #100b0b;
+}
+
+.bd {
+  border: 1px solid white;
+}
