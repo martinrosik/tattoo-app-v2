@@ -47,9 +47,20 @@ const EmailLoginPage = () => {
             text='Forgot password?'
           />
 
-          <UiButton className='mt-6' variant='acra' size='acra48px'>
+          <UiButton
+            className='mt-6'
+            variant='acra'
+            size='acra48px'
+            disabled={true}
+          >
             Continue
           </UiButton>
+
+          <UISmallText
+            className='mt-[10px] !text-left leading-none'
+            color='white'
+            text="Don't have an account? Create one."
+          />
         </UiPageWrapper>
       </IonContent>
     </IonPage>
