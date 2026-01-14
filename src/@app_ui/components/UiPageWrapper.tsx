@@ -4,7 +4,7 @@ type Props = PropsWithChildren & {
   className?: string
 }
 
-const AcraPageWrapper = (props: Props) => {
+const UiPageWrapper = (props: Props) => {
   return (
     <div
       className={`relative w-full h-full flex flex-col items-center pt-[47px] pb-[34px] px-[20px] bg-[var(--app-bg-color)] ${props.className}`}
@@ -14,4 +14,4 @@ const AcraPageWrapper = (props: Props) => {
   )
 }
 
-export default AcraPageWrapper
+export default UiPageWrapper

@@ -6,7 +6,7 @@ type Props = PropsWithChildren & {
   gradientHashTo: string
 }
 
-const AcraGradientTitle = (props: Props) => {
+const UiGradientTitle = (props: Props) => {
   return (
     <h1
       className={`w-full inline-block m-0 bg-clip-text text-transparent tracking-[-0.03em] leading-[100%] ${
@@ -26,4 +26,4 @@ const AcraGradientTitle = (props: Props) => {
   )
 }
 
-export default AcraGradientTitle
+export default UiGradientTitle

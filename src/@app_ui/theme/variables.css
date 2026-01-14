@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root,
 ion-app {
   --ion-font-family: 'Geist', sans-serif;

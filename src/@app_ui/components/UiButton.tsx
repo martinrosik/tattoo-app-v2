@@ -1,11 +1,7 @@
 import { Button } from '~/src/components/ui/button'
 
-const UiButton = () => {
-  return (
-    <>
-      <Button variant='outline' />
-    </>
-  )
-}
+type Props = React.ComponentProps<typeof Button>
+
+const UiButton = (props: Props) => <Button {...props} />
 
 export default UiButton

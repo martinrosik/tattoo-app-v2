@@ -7,20 +7,20 @@ import emailIcon from '~/src/@biz_auth/login/assets/email.svg'
 
 const LoginPageButtons = () => {
   return (
-    <>
-      <UiButton>
+    <div className='flex flex-col justify-center items-center mb-4 gap-2'>
+      <UiButton variant='acra' size='acra48px'>
         <IonImg src={logoApple} className='w-5 h-5' />
         Continue with Apple
       </UiButton>
-      <UiButton>
+      <UiButton variant='acra' size='acra48px'>
         <IonImg src={logoGoogle} className='w-5 h-5' />
         Continue with Apple
       </UiButton>
-      <UiButton>
+      <UiButton variant='acraAuthEmail' size='acra48px'>
         <IonImg src={emailIcon} className='w-5 h-5' />
-        Continue with Apple
+        Continue with email
       </UiButton>
-    </>
+    </div>
   )
 }
 
