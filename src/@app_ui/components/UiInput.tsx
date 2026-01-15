@@ -1,6 +1,6 @@
 import { cn } from '~/src/@lib_integrations/shadcn/utils'
 
-import { Input } from '~/src/@app_ui/shadcn/input'
+import { Input } from '~/src/@app_ui/shadcn/ui/input'
 
 type Props = {
   inputClassName?: string

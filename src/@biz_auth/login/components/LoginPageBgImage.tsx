@@ -3,7 +3,7 @@ import loginEye from '~/src/@app_ui/assets/cosmic-eye.png'
 
 const LoginPageBgImage = () => {
   return (
-    <div className='fixed top-0 inset-x-0 bg-[var(--app-bg-color)]'>
+    <div className='fixed top-0 inset-x-0 bg-[var(--app-bg-color)]'> 
       <UiLogo className='fixed top-[71px] left-1/2 -translate-x-1/2 z-10' />
       <img
         className='w-full h-auto scale-x-[1] select-none'

@@ -1,4 +1,4 @@
-import { Button } from '~/src/@app_ui/shadcn/button'
+import { Button } from '~/src/@app_ui/shadcn/ui/button'
 
 type Props = React.ComponentProps<typeof Button>
 
