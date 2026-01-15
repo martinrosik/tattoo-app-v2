@@ -1,10 +1,10 @@
+import UiLogo from '~/src/@app_ui/components/UiLogo'
 import loginEye from '~/src/@app_ui/assets/cosmic-eye.png'
-import AcradabraLogo from '~/src/@app_ui/components/AcradabraLogo'
 
 const LoginPageBgImage = () => {
   return (
     <div className='fixed top-0 inset-x-0 bg-[var(--app-bg-color)]'>
-      <AcradabraLogo className='fixed top-[71px] left-1/2 -translate-x-1/2 z-10' />
+      <UiLogo className='fixed top-[71px] left-1/2 -translate-x-1/2 z-10' />
       <img
         className='w-full h-auto scale-x-[1] select-none'
         src={loginEye}

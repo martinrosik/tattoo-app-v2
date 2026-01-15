@@ -6,10 +6,10 @@ type Props = {
   className?: string
 }
 
-const AcradabraLogo = (props: Props) => {
+const UiLogo = (props: Props) => {
   return (
     <IonImg className={props.className ?? ''} src={acraLogo} alt='flower' />
   )
 }
 
-export default AcradabraLogo
+export default UiLogo
