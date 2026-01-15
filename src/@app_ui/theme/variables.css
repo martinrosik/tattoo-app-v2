@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-:root,
-ion-app {
+:root {
   --ion-font-family: 'Geist', sans-serif;
   --ion-text-color: var(--foreground);
   --app-bg-color: #100b0b;
