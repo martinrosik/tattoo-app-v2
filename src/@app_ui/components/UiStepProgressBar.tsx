@@ -13,7 +13,7 @@ type Props = PropsWithChildren & {
   inactiveColor?: string
 }
 
-const AcraStepProgressBar = ({
+const UiStepProgressBar = ({
   className,
   progress,
   totalSteps = 4,
@@ -48,4 +48,4 @@ const AcraStepProgressBar = ({
   )
 }
 
-export default AcraStepProgressBar
+export default UiStepProgressBar
