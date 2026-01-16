@@ -3,8 +3,16 @@ import UISmallText from '~/src/@app_ui/components/UiSmallText'
 const PremiumPageFooter = () => {
   return (
     <div className='flex flex-row justify-center items-center pt-[24px] gap-[24px]'>
-      <UISmallText color='white' text='Restore purchase' />
-      <UISmallText color='white' text='Cancel any time' />
+      <UISmallText
+        className='!font-[500]'
+        color='lightGrey'
+        text='Restore purchase'
+      />
+      <UISmallText
+        className='!font-[500]'
+        color='lightGrey'
+        text='Cancel any time'
+      />
     </div>
   )
 }

@@ -6,10 +6,11 @@ import checkmarkCircle from '~/src/@app_ui/assets/checkmark-circle.svg'
 const PremiumPageList = () => {
   return (
     <div className='flex flex-col z-50 mt-[36px] mb-[30px] mr-[60px] justify-start items-start gap-4'>
+      {/* Urobit mozno cez shadcn Item Component lebo toto urcite nie je spravne riesenie */}
       <div className='flex flex-row justify-center items-center gap-2'>
         <IonImg src={checkmarkCircle} className='w-5 h-5' />
         <UISmallText
-          className='text-[16px]'
+          className='text-[16px] !font-[500]'
           color='white'
           text='Unlock Pro tattoos'
         />
@@ -18,7 +19,7 @@ const PremiumPageList = () => {
       <div className='flex flex-row justify-center items-center gap-2'>
         <IonImg src={checkmarkCircle} className='w-5 h-5' />
         <UISmallText
-          className='text-[16px]'
+          className='text-[16px] !font-[500]'
           color='white'
           text='Unlimited credits'
         />
@@ -27,7 +28,7 @@ const PremiumPageList = () => {
       <div className='flex flex-row justify-center items-center gap-2'>
         <IonImg src={checkmarkCircle} className='w-5 h-5' />
         <UISmallText
-          className='text-[16px]'
+          className='text-[16px] !font-[500]'
           color='white'
           text='Unlock themes, new styles'
         />
@@ -36,7 +37,7 @@ const PremiumPageList = () => {
       <div className='flex flex-row justify-center items-center gap-2'>
         <IonImg src={checkmarkCircle} className='w-5 h-5' />
         <UISmallText
-          className='text-[16px]'
+          className='text-[16px] !font-[500]'
           color='white'
           text='Higher resolution of images'
         />

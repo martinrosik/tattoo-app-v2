@@ -1,7 +1,8 @@
+import { useState } from 'react'
+
 import UiButton from '~/src/@app_ui/components/UiButton'
 import PremiumPageFooter from './PremiumPageFooter'
 import PremiumPageButton from './PremiumPageButton'
-import { useState } from 'react'
 
 const PremiumPageContent = () => {
   const [selectedPlan, setSelectedPlan] = useState<'annual' | 'monthly'>(
@@ -15,8 +16,7 @@ const PremiumPageContent = () => {
           title='Annual'
           price='$49.99/year'
           subtitle='$4.17/month'
-          isCrownShowing={true}
-          withGradientText={true}
+          showCrown={true}
           planType='annual'
           isSelected={selectedPlan === 'annual'}
           onClick={() => setSelectedPlan('annual')}

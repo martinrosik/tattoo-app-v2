@@ -9,23 +9,24 @@ type Props = {
 const PremiumPageTitles = (props: Props) => {
   return (
     <div
-      className={`flex flex-col z-50 justify-center items-center gap-[16px] ${
+      className={`flex flex-col z-50 justify-center items-center gap-[16px] w-full ${
         props.className ?? ''
       }`}
     >
-      <div className='flex flex-row gap-[10px]'>
+      <div className='flex flex-row gap-[10px] justify-center w-full'>
         <UiLogo className='w-[20px]' />
-
-        <UiTitle className='!text-[24px] !tracking-[0em]'>acradabra</UiTitle>
+        <UiTitle className='!text-[24px] !font-[400] !tracking-[0em] text-center'>
+          acradabra
+        </UiTitle>
       </div>
 
-      <div className='flex flex-col justify-center items-center'>
+      <div className='flex flex-col justify-center items-center w-full text-center'>
         <UiTitle className='!m-0 !font-semibold !text-[36px] !tracking-[-0.06em]'>
           Embody the stories
         </UiTitle>
 
         <UiGradientTitle
-          className='!m-0 !font-semibold !text-[36px] !tracking-[-0.06em]'
+          className='!m-0 !font-semibold !text-[36px] !tracking-[-0.06em] text-center'
           gradientHashFrom='#fff2bc'
           gradientHashTo='#ffc414'
         >
@@ -35,4 +36,5 @@ const PremiumPageTitles = (props: Props) => {
     </div>
   )
 }
+
 export default PremiumPageTitles
