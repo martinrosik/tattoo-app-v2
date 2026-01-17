@@ -5,7 +5,7 @@ type Props = {
   onClick?: (...args: any[]) => void
 }
 
-const UISmallText = (props: Props) => {
+const UiSmallText = (props: Props) => {
   return (
     <span
       className={`text-[14px] ${
@@ -19,4 +19,4 @@ const UISmallText = (props: Props) => {
   )
 }
 
-export default UISmallText
+export default UiSmallText

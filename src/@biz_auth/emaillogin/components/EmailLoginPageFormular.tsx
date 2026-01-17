@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import UiInput from '~/src/@app_ui/components/UiInput'
-import UISmallText from '~/src/@app_ui/components/UiSmallText'
+import UiSmallText from '~/src/@app_ui/components/UiSmallText'
 
 const EmailLoginPageFormular = () => {
   const [email, setEmail] = useState('')
@@ -29,7 +29,7 @@ const EmailLoginPageFormular = () => {
       />
 
       <div className='mt-[10px] w-full text-left'>
-        <UISmallText color='white' text='Forgot password?' />
+        <UiSmallText color='white' text='Forgot password?' />
       </div>
     </>
   )
