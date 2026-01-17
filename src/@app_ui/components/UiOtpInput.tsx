@@ -3,16 +3,16 @@ import { OTPInput, OTPInputContext } from 'input-otp'
 import { cn } from '~/src/@lib_integrations/shadcn/utils'
 
 type UiOtpInputProps = {
+  inputClassName?: string
   value: string
-  onChange: (value: string) => void
   length?: number
   labelText: string
   id: string
   wrapperClassName?: string
   containerClassName?: string
-  inputClassName?: string
   disabled?: boolean
   placeholderChar?: string
+  onChange: (value: string) => void
 }
 
 const UiOtpInput = (props: UiOtpInputProps) => {

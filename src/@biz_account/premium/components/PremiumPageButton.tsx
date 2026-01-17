@@ -1,9 +1,11 @@
 import { IonImg } from '@ionic/react'
+
 import crown from '~/src/@app_ui/assets/crown.svg'
 
 type PlanType = 'monthly' | 'annual'
 
 type Props = {
+  className?: string
   title: string
   price: string
   subtitle: string
@@ -14,7 +16,6 @@ type Props = {
   withGradientText?: boolean
   withGradientBg?: boolean
   onClick?: () => void
-  className?: string
 }
 
 const PremiumPageButton = ({
@@ -36,8 +37,8 @@ const PremiumPageButton = ({
   const bgClass = withGradientBg
     ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-950'
     : isSelected
-    ? selectedBg
-    : baseBg
+      ? selectedBg
+      : baseBg
 
   const titleClass = withGradientText
     ? 'bg-gradient-to-b from-[#FFEEBC] to-[#FECD3C] bg-clip-text text-transparent'

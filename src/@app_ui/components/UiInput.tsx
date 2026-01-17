@@ -3,7 +3,7 @@ import { cn } from '~/src/@lib_integrations/shadcn/utils'
 import { Input } from '~/src/@app_ui/shadcn/ui/input'
 
 type Props = {
-  inputClassName?: string
+  classname?: string
   value: string
   type: React.ComponentProps<'input'>['type']
   placeholder?: string
@@ -26,7 +26,7 @@ const UiInput = (props: Props) => {
       <Input
         className={cn(
           'w-full! h-[56px] mt-[8px]! rounded-[16px] bg-[#302D31] border border-[#302D31] px-[20px] text-[16px] font-[500] tracking-[-0.01em] text-white placeholder:text-[#d5d5d5] placeholder:opacity-100 focus-visible:border-white focus-visible:ring-0',
-          props.inputClassName
+          props.classname
         )}
         id={props.id}
         type={props.type}

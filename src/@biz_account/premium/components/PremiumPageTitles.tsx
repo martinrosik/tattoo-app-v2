@@ -1,6 +1,6 @@
+import UiTitle from '~/src/@app_ui/components/UiTitle'
 import UiGradientTitle from '~/src/@app_ui/components/UiGradientTitle'
 import UiLogo from '~/src/@app_ui/components/UiLogo'
-import UiTitle from '~/src/@app_ui/components/UiTitle'
 
 type Props = {
   className?: string

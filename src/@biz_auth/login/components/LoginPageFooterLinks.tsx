@@ -1,15 +1,19 @@
-import { IonButton } from '@ionic/react'
+import UiSmallText from '~/src/@app_ui/components/UiSmallText'
 
 const LoginPageFooterLinks = () => {
   return (
-    <div className='flex flex-row justify-center items-center'>
-      <IonButton fill='clear' className='text-[#D5D5D5]'>
-        Privacy Policy
-      </IonButton>
+    <div className='flex flex-row justify-center items-center gap-6 mt-[15px]'>
+      <UiSmallText
+        className='!font-[500]'
+        color='lightGrey'
+        text=' Privacy Policy'
+      />
 
-      <IonButton fill='clear' className='text-[#D5D5D5]'>
-        Terms of Service
-      </IonButton>
+      <UiSmallText
+        className='!font-[500]'
+        color='lightGrey'
+        text='Terms of Service'
+      />
     </div>
   )
 }
