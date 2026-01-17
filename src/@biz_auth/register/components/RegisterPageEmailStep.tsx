@@ -19,23 +19,20 @@ const RegisterPageEmailStep = ({ onNext, onValidChange }: Props) => {
 
   return (
     <>
-      <div>
-        <UiTitle className='!mt-[34px]'>Register with e-mail</UiTitle>
-        <UiSubTitle className='!mb-8'>
-          To continue, please fill out the required fields
-        </UiSubTitle>
-      </div>
+      <UiTitle className='!mt-[34px] !mr-[120px]'>Register with e-mail</UiTitle>
 
-      <div className='w-full'>
-        <UiInput
-          labelText='E-mail address'
-          type='email'
-          placeholder='Start typing...'
-          id='email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
+      <UiSubTitle className='!mb-8 !mr-[21px]'>
+        To continue, please fill out the required fields
+      </UiSubTitle>
+
+      <UiInput
+        labelText='E-mail address'
+        type='email'
+        placeholder='Start typing...'
+        id='email'
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
     </>
   )
 }

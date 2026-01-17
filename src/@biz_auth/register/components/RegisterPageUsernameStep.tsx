@@ -27,16 +27,14 @@ const RegisterPageUsernameStep = ({
         Choose your username
       </UiTitle>
 
-      <div className='w-full'>
-        <UiInput
-          labelText='Username'
-          type='text'
-          placeholder='Start typing...'
-          id='username'
-          value={username}
-          onChange={(e) => setUsername(e.target.value.trim())}
-        />
-      </div>
+      <UiInput
+        labelText='Username'
+        type='text'
+        placeholder='Start typing...'
+        id='username'
+        value={username}
+        onChange={(e) => setUsername(e.target.value.trim())}
+      />
     </>
   )
 }

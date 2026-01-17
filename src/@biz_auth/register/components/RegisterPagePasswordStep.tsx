@@ -27,28 +27,24 @@ const RegisterPagePasswordStep = ({ onBack, onNext, onValidChange }: Props) => {
         Set your password
       </UiTitle>
 
-      <div className='w-full space-y-4'>
-        <div>
-          <UiInput
-            labelText='Password'
-            type='password'
-            placeholder='Start typing...'
-            id='password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
+      <div className='space-y-6'>
+        <UiInput
+          labelText='Password'
+          type='password'
+          placeholder='Start typing...'
+          id='password'
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
-        <div>
-          <UiInput
-            labelText='Confirm password'
-            type='password'
-            placeholder='Start typing...'
-            id='confirm-password'
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-        </div>
+        <UiInput
+          labelText='Confirm password'
+          type='password'
+          placeholder='Start typing...'
+          id='confirm-password'
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+        />
       </div>
     </>
   )

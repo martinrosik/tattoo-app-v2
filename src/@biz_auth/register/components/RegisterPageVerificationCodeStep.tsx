@@ -26,6 +26,7 @@ const RegisterPageVerificationCodeStep = ({
   return (
     <>
       <UiTitle className='!mt-[34px]'>Enter verification code</UiTitle>
+
       <UiSubTitle className='!mb-8'>
         Enter the 5 digit code sent to your email
       </UiSubTitle>
