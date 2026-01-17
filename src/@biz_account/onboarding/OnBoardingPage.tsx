@@ -7,7 +7,7 @@ import {
 } from './constants/onboarding-page.constants'
 
 import UiPageWrapper from '~/src/@app_ui/components/UiPageWrapper'
-import UiStepProgressBar from '~/src/@app_ui/components/UiStepProgressBar'
+import UiProgress from '~/src/@app_ui/components/UiProgress'
 import OnBoardingPageBgImage from './components/OnBoardingPageBgImage'
 import OnBoardingPageTitles from './components/OnBoardingPageTitles'
 import OnBoardingPageFooter from './components/OnBoardingPageFooter'
@@ -37,14 +37,13 @@ const OnBoardingPage = () => {
           <OnBoardingPageBgImage backgroundImage={step.backgroundImage} />
 
           <div className='absolute inset-0 z-10 flex flex-col px-5 pt-[542px]'>
-            <UiStepProgressBar
+            <UiProgress
+              className='w-[150px]'
               progress={currentStep}
               totalSteps={totalSteps}
-              mode='current'
-              width='150px'
-              height='7px'
-              activeColor='bg-white'
-              inactiveColor='bg-[#302D31]'
+              height={7}
+              activeClassName='bg-white'
+              inactiveClassName='bg-[#302D31]'
             />
 
             <OnBoardingPageTitles
